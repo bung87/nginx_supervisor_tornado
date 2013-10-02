@@ -1,0 +1,15 @@
+[Unit]
+Description=Supervisord
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/run/supervisord.pid
+;ExecStartPre=/usr/sbin/nginx -t
+ExecStart=/usr/bin/supervisord -c /etc/supervisord.conf
+ExecReload=/usr/bin/supervisorctl reload
+ExecStop=/usr/bin/supervisorctl stop all
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
