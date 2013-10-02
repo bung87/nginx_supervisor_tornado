@@ -1,9 +1,9 @@
 nginx_supervisor_tornado
 ========================
-a nginx+supervisor+tornado development environment automatically install and setup tool.
-running 2 nginx worker_processes and 4 servers (listening on 8000-8003)  by default;
-using a tornado hello world example as homepage.
-nginxd.service(not original nginx.service) and supervisord.service services will be enabled.
+a nginx+supervisor+tornado development environment automatically install and setup tool.<br>
+running 2 nginx worker_processes and 4 servers (listening on 8000-8003)  by default;<br>
+using a tornado hello world example as homepage.<br>
+nginxd.service(not original nginx.service) and supervisord.service services will be enabled.<br>
 ##usage
 	./install_init.sh
 ##dependencies
