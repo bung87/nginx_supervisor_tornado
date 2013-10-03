@@ -7,8 +7,7 @@ nginxd.service(not original nginx.service) and supervisord.service services will
 ##usage
 	./install_init.sh
 ##dependencies
-	yum pip
-if you have yum installed pip will be installed by script.
+	yum 
 ##environment
   >nginx version: 1.4.2<br>
   >supervisor version:3.0<br>
